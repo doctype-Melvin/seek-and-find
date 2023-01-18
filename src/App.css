@@ -18,6 +18,7 @@ html, body, #root {
 .imgContainer {
   width: 60vw;
   position: relative;
+  cursor: url('/public/Untitled.png') 50 50, auto;
 }
 
 .imgContainer > img {

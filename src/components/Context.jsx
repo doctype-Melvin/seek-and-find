@@ -1,13 +1,18 @@
 import React from "react";
 
 export default function Context(props) {
-
+    let { relX, relY } = 0
     let current = props.coords[props.coords.length-1]
+    const img = document.querySelector('.imgContainer')
     const choice = (e) => {
         props.setContext(prevState => !prevState)
-        console.log(e.target.textContent, props.coords)
+        relX = Math.round((current.x / img.clientWidth)*100)
+        relY = Math.round((current.y / img.clientHeight)*100)
+        evalGuess()
     }
-    
+    const evalGuess = () => {
+        console.log(relX, relY)
+    }
 
     return (
         <div className="contextCt"

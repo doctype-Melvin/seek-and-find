@@ -3,6 +3,7 @@ import Context from "./Context";
 
 export default function Main(props) {
 // console.log(props.coords)
+
     return (
         <div className="imgContainer">
             <img 

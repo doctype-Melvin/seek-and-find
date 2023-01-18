@@ -18,6 +18,8 @@ function App() {
     setCoords(prevState => [...prevState])
   }
 
+ 
+
   return (
     <div className="App">
       <Header />
