@@ -10,7 +10,8 @@ export default function Main(props) {
             onClick={props.clickHandler}
             />
             {!props.context ?
-            <Context 
+            <Context
+            setContext={props.setContext}
             coords={props.coords} 
             context={props.context}
             /> : null}

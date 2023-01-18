@@ -2,9 +2,12 @@ import React from "react";
 
 export default function Context(props) {
 
-    // const style = props.coords.shift()
     let current = props.coords[props.coords.length-1]
-    console.log(current)
+    const choice = (e) => {
+        props.setContext(prevState => !prevState)
+        console.log(e.target.textContent, props.coords)
+    }
+    
 
     return (
         <div className="contextCt"
@@ -14,12 +17,30 @@ export default function Context(props) {
             }}
         >
             <ul className="contextMenu">
-                <li>Ball</li>
-                <li>Trophy</li>
-                <li>Clips</li>
-                <li>Dumbbell</li>
-                <li>Boxing Gloves</li>
-                <li>Expander</li>
+                <li 
+                className="choice"
+                onClick={choice}
+                >Ball</li>
+                <li 
+                className="choice"
+                onClick={choice}
+                >Trophy</li>
+                <li 
+                className="choice"
+                onClick={choice}
+                >Clips</li>
+                <li 
+                className="choice"
+                onClick={choice}
+                >Dumbbell</li>
+                <li 
+                className="choice"
+                onClick={choice}
+                >Boxing Gloves</li>
+                <li 
+                className="choice"
+                onClick={choice}
+                >Expander</li>
             </ul>
         </div>
     )

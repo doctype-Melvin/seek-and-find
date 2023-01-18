@@ -35,7 +35,16 @@ html, body, #root {
   margin: 0
 }
 
-.contextMenu > li {
+.choice {
   border: 1px solid black;
   padding: 3px;
+  cursor: pointer;
+}
+
+.choice:hover {
+  background-color: rgb(182, 182, 182);
+}
+
+.choice:active {
+  background-color: rgb(246, 246, 246);
 }

@@ -25,6 +25,7 @@ function App() {
       clickHandler={clickHandler}
       context={context}
       coords={coords}
+      setContext={setContext}
       />
     </div>
   )
