@@ -17,8 +17,25 @@ html, body, #root {
 
 .imgContainer {
   width: 60vw;
+  position: relative;
 }
 
 .imgContainer > img {
   width: 100%;
+}
+
+.contextCt {
+  position: absolute;
+  background-color: rgb(184, 208, 174);
+}
+
+.contextMenu {  
+  list-style-type: none;
+  padding: 0;
+  margin: 0
+}
+
+.contextMenu > li {
+  border: 1px solid black;
+  padding: 3px;
 }
