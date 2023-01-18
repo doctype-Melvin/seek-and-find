@@ -6,6 +6,7 @@ export default function Main(props) {
 
     return (
         <div className="imgContainer">
+            <div className='info'></div>
             <img 
             src="/img1.jpg"
             onClick={props.clickHandler}

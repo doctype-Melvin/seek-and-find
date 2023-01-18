@@ -49,3 +49,19 @@ html, body, #root {
 .choice:active {
   background-color: rgb(246, 246, 246);
 }
+
+.strike {
+  text-decoration: line-through;
+}
+
+.info {
+  display: none;
+  position: absolute;
+  top: 5%;
+  left: 4%;
+  padding: 10px;
+  background-color: rgba(245, 245, 220, 0.808);
+  border-radius: 3px;
+  font-size: 1.75vw;
+  box-shadow: 0 0 5px 1px rgb(155, 155, 155);
+}
