@@ -16,7 +16,7 @@ html, body, #root {
 }
 
 .imgContainer {
-  width: 100vw;
+  width: 70vw;
   position: relative;
   cursor: url('/public/Untitled.png') 50 50, auto;
 }
@@ -27,9 +27,9 @@ html, body, #root {
 
 .timer {
   position: absolute;
-  right: 10%;
-  top: 3%;
-  font-size: 4.5vw;
+  right: 6%;
+  top: 4%;
+  font-size: 3.5vw;
 }
 
 .contextCt {
@@ -62,7 +62,7 @@ html, body, #root {
   position: absolute;
   height: 80px;
   width: 80px;
-  top: 19%;
+  top: 18%;
   left: 27%;
 }
 
@@ -77,8 +77,8 @@ html, body, #root {
   position: absolute;
   height: 80px;
   width: 80px;
-  top: 26%;
-  left: 21%;
+  top: 25%;
+  left: 20%;
 }
 
 .grips::before {
@@ -92,7 +92,7 @@ html, body, #root {
   position: absolute;
   height: 80px;
   width: 80px;
-  top: 33%;
+  top: 31%;
   left: 21%;
 }
 
@@ -107,7 +107,7 @@ html, body, #root {
   position: absolute;
   height: 80px;
   width: 80px;
-  top: 32%;
+  top: 30%;
   left: 11%;
 }
 
@@ -122,8 +122,8 @@ html, body, #root {
   position: absolute;
   height: 80px;
   width: 80px;
-  top: 20%;
-  left: 11%;
+  top: 19%;
+  left: 10%;
 }
 
 .expander::before {
@@ -137,8 +137,8 @@ html, body, #root {
   position: absolute;
   height: 80px;
   width: 80px;
-  top: 15%;
-  left: 19%;
+  top: 14%;
+  left: 18%;
 }
 
 .trophy::before {
