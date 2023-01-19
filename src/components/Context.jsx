@@ -3,10 +3,10 @@ import data from "../data"
 import { strikeThrough, celebrate } from "../Helper";
 
 export default function Context(props) {
-    let { relX, relY } = 0
-    let object = ''
+    let { relX, relY } = 0 // Variables to store relative position of click
+    let object = '' // Chosen object
     
-    let current = props.coords[props.coords.length-1]
+    let current = props.coords[props.coords.length-1] // Click position
     
     const img = document.querySelector('.imgContainer')
     
@@ -18,10 +18,9 @@ export default function Context(props) {
         evalGuess(relX, relY, object, e.target)
     }
 
-    const evalGuess = (x, y, obj, choice) => {
-        let target = data.find((item) => {
-            return item.name === obj
-        })
+    const evalGuess = (x, y, obj) => {
+        
+        let target = data.find(item => item.level === props.level).objects.filter(item => item.name === obj)[0]
 
         if (target.xMin < x && target.xMax > x &&
             target.yMin < y && target.yMax > y) {

@@ -16,6 +16,7 @@ export default function Main(props) {
             setContext={props.setContext}
             coords={props.coords} 
             context={props.context}
+            level={props.level}
             /> : null}
         </div>
     )

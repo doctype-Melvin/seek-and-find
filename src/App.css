@@ -16,7 +16,7 @@ html, body, #root {
 }
 
 .imgContainer {
-  width: 60vw;
+  width: 100vw;
   position: relative;
   cursor: url('/public/Untitled.png') 50 50, auto;
 }

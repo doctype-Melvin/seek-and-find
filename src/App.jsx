@@ -8,6 +8,7 @@ function App() {
 
   const [context, setContext] = useState(true)
   const [coords, setCoords] = useState([])
+  const [level, setLevel] = useState(1)
 
   const clickHandler = (e) => {
     let space = e.target.getBoundingClientRect()
@@ -18,8 +19,6 @@ function App() {
     setCoords(prevState => [...prevState])
   }
 
- 
-
   return (
     <div className="App">
       <Header />
@@ -28,6 +27,7 @@ function App() {
       context={context}
       coords={coords}
       setContext={setContext}
+      level={level}
       />
     </div>
   )
