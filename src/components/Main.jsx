@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import Context from "./Context";
+import Timer from "./Timer";
 
 export default function Main(props) {
 // console.log(props.coords)
 
+
     return (
         <div className="imgContainer">
+            <Timer
+            isRunning={props.isRunning}
+            setIsRunning={props.setIsRunning}
+            />
             <div className='info'><span>{props.objects}</span></div>
             <img 
             src="/img1.jpg"
@@ -19,6 +25,7 @@ export default function Main(props) {
             <div className="trophy"></div>
             {!props.context ?
             <Context
+            stop={props.stop}
             setContext={props.setContext}
             coords={props.coords} 
             context={props.context}

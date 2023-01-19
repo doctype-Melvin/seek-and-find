@@ -31,8 +31,9 @@ export default function Context(props) {
                 document.querySelector(selector).style.display = 'block'
                 celebrate(true, prop)
                 props.setCounter(prevState => prevState += 1)
-                console.log(props.counter)
-                endGame(props.counter)
+                if (endGame(props.counter)) {
+                    props.stop()
+                }
             } else {
                 celebrate(false)
             }

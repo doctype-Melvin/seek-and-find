@@ -25,6 +25,13 @@ html, body, #root {
   width: 100%;
 }
 
+.timer {
+  position: absolute;
+  right: 10%;
+  top: 3%;
+  font-size: 4.5vw;
+}
+
 .contextCt {
   position: absolute;
   background-color: rgb(184, 208, 174);

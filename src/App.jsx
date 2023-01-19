@@ -10,6 +10,7 @@ function App() {
   const [coords, setCoords] = useState([])
   const [level, setLevel] = useState(1)
   const [counter, setCounter] = useState(0)
+  const [isRunning, setIsRunning] = useState(false);
 
   const clickHandler = (e) => {
     let space = e.target.getBoundingClientRect()
@@ -19,6 +20,16 @@ function App() {
     context ? setCoords(prevState => [...prevState, {x, y}]) :
     setCoords(prevState => [...prevState])
   }
+
+  function start() {
+    setIsRunning(true);
+  }
+
+  function stop() {
+    setIsRunning(false);
+  }
+
+  window.onload = () => start()
 
   return (
     <div className="App">
@@ -31,6 +42,9 @@ function App() {
       level={level}
       counter={counter}
       setCounter={setCounter}
+      isRunning={isRunning}
+      setIsRunning={setIsRunning}
+      stop={stop}
       />
     </div>
   )

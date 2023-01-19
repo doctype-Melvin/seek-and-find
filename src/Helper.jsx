@@ -13,9 +13,11 @@ function makeRelative (x, y) {
 
 function endGame (val) {
     if (val === 5) {
-        console.log('Game Over')
+        document.querySelector('.info').textContent = `You have found all objects!`
+        return true
     } else {
         console.log('Keep playing')
+        return false
     }
 }
 
