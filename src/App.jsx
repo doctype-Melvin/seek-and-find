@@ -9,6 +9,7 @@ function App() {
   const [context, setContext] = useState(true)
   const [coords, setCoords] = useState([])
   const [level, setLevel] = useState(1)
+  const [counter, setCounter] = useState(0)
 
   const clickHandler = (e) => {
     let space = e.target.getBoundingClientRect()
@@ -28,6 +29,8 @@ function App() {
       coords={coords}
       setContext={setContext}
       level={level}
+      counter={counter}
+      setCounter={setCounter}
       />
     </div>
   )

@@ -50,8 +50,94 @@ html, body, #root {
   background-color: rgb(246, 246, 246);
 }
 
-.strike {
-  text-decoration: line-through;
+.ball {
+  display: none;
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  top: 19%;
+  left: 27%;
+}
+
+.ball::before {
+  content: "X";
+  font-size: 5vw;
+  text-align: center;
+}
+
+.grips {
+  display: none;
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  top: 26%;
+  left: 21%;
+}
+
+.grips::before {
+  content: "X";
+  font-size: 5vw;
+  text-align: center;
+}
+
+.dumbbell {
+  display: none;
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  top: 33%;
+  left: 21%;
+}
+
+.dumbbell::before {
+  content: "X";
+  font-size: 5vw;
+  text-align: center;
+}
+
+.gloves {
+  display: none;
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  top: 32%;
+  left: 11%;
+}
+
+.gloves::before {
+  content: "X";
+  font-size: 5vw;
+  text-align: center;
+}
+
+.expander {
+  display: none;
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  top: 20%;
+  left: 11%;
+}
+
+.expander::before {
+  content: "X";
+  font-size: 5vw;
+  text-align: center;
+}
+
+.trophy {
+  display: none;
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  top: 15%;
+  left: 19%;
+}
+
+.trophy::before {
+  content: "X";
+  font-size: 5vw;
+  text-align: center;
 }
 
 .info {

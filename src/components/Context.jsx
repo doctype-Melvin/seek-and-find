@@ -1,6 +1,6 @@
 import React from "react";
 import data from "../data"
-import { strikeThrough, celebrate } from "../Helper";
+import { celebrate, endGame } from "../Helper";
 
 export default function Context(props) {
     let { relX, relY } = 0 // Variables to store relative position of click
@@ -19,13 +19,20 @@ export default function Context(props) {
     }
 
     const evalGuess = (x, y, obj) => {
+        // Look up the current level and go through the objects in data
+        let target = data.find(item => item.level === props.level)
+        .objects.filter(item => item.name === obj)[0]
         
-        let target = data.find(item => item.level === props.level).objects.filter(item => item.name === obj)[0]
-
+        let selector = `.${obj}` // Creates selector from choice to toggle 'X'
+        
         if (target.xMin < x && target.xMax > x &&
             target.yMin < y && target.yMax > y) {
                 let prop = target.name[0].toUpperCase() + target.name.slice(1)
+                document.querySelector(selector).style.display = 'block'
                 celebrate(true, prop)
+                props.setCounter(prevState => prevState += 1)
+                console.log(props.counter)
+                endGame(props.counter)
             } else {
                 celebrate(false)
             }
